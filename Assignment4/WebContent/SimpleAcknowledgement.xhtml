@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+     xmlns:p="http://primefaces.org/ui">
+<!-- 
+
+Description: This page gives a simple acknowledgement once 
+the survey is filled successfully. 
+-->
+<h:head>
+<title>Simple Acknowledgement</title>
+	
+</h:head>
+<h:body>
+
+<p style="color: green">Your Information has been saved succefully</p>
+<h2><b> Thank you #{studentBean.firstname} #{studentBean.lastname} for completion of the survey </b> </h2>
+<br />
+<h3> Standard Deviation is: #{studentBean.standarddeviation}</h3>
+<h3> Mean is : #{studentBean.mean}</h3>
+<br />
+<h:button value="Go back to Survey Form" outcome="Survey.xhtml"/>
+<h:button value="Go back to Main Page" outcome="/index.xhtml"/>
+</h:body>
+</html>
